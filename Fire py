@@ -12,15 +12,15 @@ def play_alarm_sound_function():
     print("Fire alarm end")
 
 def send_mail_function():
-    recipient_email = "saurabh4joy@gmail.com"  # replace with the recipient's email address
+    recipient_email = "enter your email "  # replace with the recipient's email address
     recipient_email = recipient_email.lower()
 
     try:
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.ehlo()
         server.starttls()
-        server.login("saurabh4joy@gmail.com", 'giyq ljcw qvqz bnjd')  # replace with your email and password
-        server.sendmail('saurabh4joy@gmail.com', recipient_email, "Warning: Fire accident has been reported")
+        server.login("enter the email ", 'enter the password')  # replace with your email and password
+        server.sendmail('enter the email', recipient_email, "Warning: Fire accident has been reported")
         print("Alert mail sent successfully to {}".format(recipient_email))
         server.close()
 
